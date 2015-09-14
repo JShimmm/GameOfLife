@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="life-cs.css">
+
+	<div style="margin: 10px;">
+		<p>Rules: Click on a cell in the grid to make it alive. Red cells are alive and white cells are dead.</p>
+		<p>In every generation, each cell interacts with its adjacent cells whether it be horizonal, vertical, or diagonal. </p>
+		<p>1. A live cell with less than two live neighbours dies
+		<p>2. A live cell with two or three neighbours lives on
+		<p>3. A live cell with more than three neighbours dies
+		<p>4. A dead cell with exactly three neighbours comes alive
+		<p>All cells interact with each other concurrently.
+		<p>After you click start, life begins. 
+	</div>
+
+	<div>
+		<fieldset>
+			<legend>Example Patterns</legend>
+			<button id="glider">Glider</button>
+			<button id="blinker">Blinker</button>
+			<button id="pulsar">Pulsar</button>
+		</fieldset>
+	</div>
+
+	<canvas id="canvas" width=500 height=500 >Canvas is not supported in your browser.</canvas>
+	<button id="start">Start</button>
+	<button id="stop">Stop</button>
+	<button id="clear">Clear</button>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="life-js.js"></script>
+</head>
+    <body>
+    </body>
+</html>
